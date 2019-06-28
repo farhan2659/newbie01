@@ -1,16 +1,22 @@
-#usr/bin/bash
+#!/system/bin/sh
 clear
-echo "starting tools... /";
-sleep 0.1;
+#perulangan
+ulang='y'
+while [ $ulang = 'y' ];
+do
+python2 password.py
 clear
-echo 'Starting tools... -';
-sleep 0.1;
+echo $me"starting tools... /";
+sleep 0.5;
 clear
-echo 'sTarting tools... \';
-sleep 0.1;
+echo $ku'Starting tools... -';
+sleep 0.5;
 clear
-echo "stArting tools... /";
-sleep 0.1;
+echo $i'sTarting tools... \';
+sleep 0.5;
+clear
+echo $me"stArting tools... /";
+sleep 0.5;
 clear
 echo 'staRting tools... -';
 sleep 0.1;
@@ -30,23 +36,7 @@ clear
 echo 'starting Tools... -';
 sleep 0.1;
 clear
-echo "starting tOols... /";
-sleep 0.1;
-clear
-echo 'starting toOls... -';
-sleep 0.1;
-clear
-echo "starting tools... /";
-sleep 0.1;
-clear
-echo 'Starting tools... -';
-sleep 0.1;
-clear
-echo 'sTarting tools... \';
-sleep 0.1;
-clear
-echo "stArting tools... /";
-sleep 0.1;
+echo "starting tOols... /";                                                                                           sleep 0.1;
 clear
 echo 'staRting tools... -';
 sleep 0.1;
@@ -104,10 +94,7 @@ sleep 0.1;
 clear
 echo "starting tOols... /";
 sleep 0.1;
-clear
-echo 'starting toOls... -';
-sleep 0.1;
-clear
+clear                                                            
 bi='\033[34;1m' #biru
 i='\033[32;1m' #ijo
 pur='\033[35;1m' #purple
@@ -143,8 +130,8 @@ echo $bi"["$cy"R.Diz"$bi"]"$bi"["$cy"Pilih Nomornya"$bi"]"
 echo $cy"╔"
 read -p"╚══>>" pil
 
-if [ $pil = 1 ]   
-then                                                      
+if [ $pil = 1 ]
+then
 clear
 figlet -f slant "N G O P I"|lolcat
 sleep 1
@@ -176,7 +163,7 @@ python2 darkontol-v7.py
 fi
 
 if [ $pil = 4 ]
-then 
+then
 clear
 figlet -f slant "N G O P I"|lolcat
 sleep 1
@@ -226,7 +213,7 @@ sh shellphish.sh
 fi
 
 if [ $pil = 9 ]
-then 
+then
 clear
 figlet -f slant "N G O P I"|lolcat
 sleep 1
@@ -240,30 +227,32 @@ then
 clear
 apt update && apt upgrade
 apt install python2
-apt install python2                                                                     
+apt install python2
 pip2 install urllib3 chardet certifi idna requests
 pkg install git
 pip2 install mechanize
 pkg install curl
 pkg install ruby
-pkg install gem                                                                         
+pkg install gem
 gem install lolcat
 pkg install git
 pkg install php
 pkg install ruby cowsay toilet figlet
 pkg install neofetch
 pkg install nano
-figlet -f slant " BERHASIL TUH GOBLOG"|lolcat
+figlet -f slant "TUH GOBLOG"|lolcat
 fi
 
 if [ $pil = 0 ]
 then
-echo $me"TERIMA KASIH TELAH MENGGUNAKAN TOOL INI"                                       
+echo $me"TERIMA KASIH TELAH MENGGUNAKAN TOOL INI"
 sleep 1
 echo $me"Author:R.Diz"
 exit
 fi
 
-
-
-
+      echo 'ERROR : Wrong Input....! '
+      sleep 1
+      echo $ulang
+done
+    
